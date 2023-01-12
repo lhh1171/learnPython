@@ -28,3 +28,8 @@ class Stu(Person):
 
 
 pprint(Stu.__dict__)
+print(vars(Stu))
+# 打印dict所有的k
+print(dir(Person))
+print(dir())
+
