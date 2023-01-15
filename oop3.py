@@ -11,6 +11,8 @@ class Person(metaclass=ABCMeta):
 class Stu(Person):
     def xxxx(self):
         pass
+    def xxx(self):
+        pass
 
 
 if __name__ == "__main__":
