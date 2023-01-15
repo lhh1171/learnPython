@@ -7,6 +7,10 @@ class Res:
     def dis(self):
         print(self.__name)
 
+# suppress
+
+def xxx():
+    print("xxxx")
 # 不写enter exit
 with suppress(Exception),closing(Res("xxx"))  as r:
     r.dis()

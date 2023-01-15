@@ -12,6 +12,10 @@ class Person:
         print("set")
         self.__age = age
 
+    @age.getter
+    def age(self):
+        print("get")
+        return "99"
     @staticmethod
     def dis(x):
         print(x)
@@ -23,7 +27,7 @@ class Person:
 # get && set
 p = Person()
 p.age = 1
-p.age
+print(p.age)
 
 # 用类直接启动方法
 Person.dis(11)

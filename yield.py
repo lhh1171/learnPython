@@ -18,6 +18,13 @@ try:
     print("ret:",a)
     a=x.send("a")
     print("ret:",a)
+    a = x.send("a")
+    print("ret:", a)
+    a = x.send("a")
+    print("ret:", a)
+    next(x)
+    next(x)
     next(x)
 except StopIteration as err:
+    print("xxxxx")
     print(err)
